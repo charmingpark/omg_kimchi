@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+/* header */
+#header-wrap {height: 180px;}
+.inner h1.logo a img{left: 555px;}
+
+#lang button .lang{width: 65px;height: 25px;background: url(../imgs/main/header/lang.svg) 65px 25px / contain;}
+#util{right: 0;}
+#util a:last-child{margin-right: 0;}

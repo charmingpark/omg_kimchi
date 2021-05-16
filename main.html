@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>메인 | OMG김치</title>
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/icons/favicon.ico">
+  <link rel="icon" href="assets/icons/favicon-16x16.png"sizes="16x16">
+  <link rel="icon" href="assets/icons/favicon-32x32.png"sizes="32x32">
+  <link rel="icon" href="assets/icons/favicon-96x96.png"sizes="96x96">
+  
+</head>
+<body>
+  <!-- header#header>(h1>a)+(div#util>a*3)+(div#lang>button+(ul>li*4>a))+(nav#gnb>h2+ul>li*5>a+(ul>li>a)) -->
+
+  <div id="skip">
+    <a href="nav#gnb">주메뉴 바로가기 &#8595; </a>
+    <a href="#topQuick">상단 퀵메뉴 바로가기 &#8595; </a>
+    <a href="section#cont1">본문 바로가기 &#8595; </a>
+  </div>
+  <div id="wrap">
+    <div id="header-wrap">
+      <header id="header">
+        <div class="inner">
+          <h1 class="logo">
+            <a href="main.html">
+              <img src="assets/imgs/common/header/main_header_logo.svg" alt="OMG김치">
+            </a>
+          </h1>
+          <div id="lang">
+            <button type="button" class="current" title="다국어지원">
+              <div class="lang"></div>
+            </button><!-- main과 sub가 디자인이 다름 -->
+            <ul>
+              <li><a href="/ko/main/index.do?lang=ko">KOR</a></li>
+              <li><a href="/en/main/index.do?lang=en">ENG</a></li>
+              <li><a href="/jp/main/index.do?lang=jp">JPN</a></li>
+              <li><a href="/ch/main/index.do?lang=ch">CHN</a></li>
+              <!-- seoul-sky참고 -->
+            </ul>
+          </div>
+          <div id="util">
+            <a href="util/cart.html"><img src="assets/imgs/common/header/cart.svg" alt="장바구니">
+              <span>0</span>
+            </a>
+            <a href="util/sign-in.html"><img src="assets/imgs/common/header/sign_in.svg" alt="회원가입"></a>
+            <a href="util/login.html"><img src="assets/imgs/common/header/login.svg" alt="로그인"></a>
+          </div>
+        </div>
+        <nav id="gnb">
+          <h2 class="blind">메인 메뉴</h2>
+          <ul>
+            <li>
+              <a href="brand/brand.html">BRAND</a>
+              <ul>
+                <li><a href="brand/brand.html">OMG김치 이야기</a></li>
+                <li><a href="brand/history.html">김치 이야기</a></li>
+                <li><a href="brand/class-table.html">김치 아카데미</a></li>
+                <li><a href="brand/csr.html">OMG김치 CSR</a></li>
+                <li><a href="brand/press-list.html">PRESS CENTER</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="menu/kimchi-best.html">MENU</a>
+              <ul>
+                <li><a href="menu/kimchi-best.html">BEST 김치</a></li>
+                <li><a href="menu/kimchi-list.html">김장 김치</a></li>
+                <li><a href="menu/kimchi-sauce.html">김치 양념</a></li>
+                <li><a href="menu/kimchi-diy.html">김치요리 DIY 팩</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="mbr/bnft.html">MEMBERSHIP</a>
+              <ul>
+                <li><a href="mbr/bnft.html">멤버십 혜택</a></li>
+                <li><a href="mbr/vip.html">한민족 VIP</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="bnfit/gcard.html">BENEFIT</a>
+              <ul>
+                <li><a href="bnfit/gcard.html">GIFT CARD</a></li>
+                <li><a href="bnfit/baemin.html">배달의 민족</a></li>
+                <li><a href="bnfit/point.html">포인트 결제</a></li>
+                <li><a href="bnfit/voucher.html">상품권</a></li>
+                <li><a href="bnfit/event.html">이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="store/domestic.html">STORE</a>
+              <ul>
+                <li><a href="store/domestic.html">국내</a></li>
+                <li><a href="store/oversea.html">해외개인결제</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    +(section#cont$*6>h2)+(footer#footer>)
+  </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+/* header */
+#header-wrap {height: 116px;}
+
+#lang button .lang{width: 36px; height: 44px;background: url(../imgs/sub_common/lang.svg) 37px 45px / contain;} 
+
+#lang{right: 0; top: 48px;}
+#util{right: 42px; top: 50px;}
+#util a span{line-height: 21px;}
