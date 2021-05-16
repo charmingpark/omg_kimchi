@@ -2,9 +2,15 @@
 
 /* header */
 #header-wrap {height: 116px;}
+#lang button div{display: block; width: 46px; height: 55px;background: url(../imgs/sub_common/lang.svg)no-repeat 100% 100% / cover;}
+#lang button{position: relative;left: 180px;}
+#lang ul{display: block; position: absolute; right: -6px; z-index: 100; padding: 7px 0; border: 1px solid #ccc; background: #fff; text-align: center; font-size: 12px;}
+#lang ul li {width: 28px; height: 17px; padding: 2px 14px; line-height: 1.4;}
+#lang ul li:hover a{font-weight: 600;}
 
-#lang button .lang{width: 36px; height: 44px;background: url(../imgs/sub_common/lang.svg) 37px 45px / contain;} 
-
-#lang{right: 0; top: 48px;}
-#util{right: 42px; top: 50px;}
-#util a span{line-height: 21px;}
+#util{position: absolute; bottom: 0;}
+#util a img{height: 55px;}
+#util a:first-child{position: relative; }
+#util a span::before{content: ""; position: absolute; width: 18px; height: 18px; border-radius: 50%; background: #ef2900; font-size: 11px;z-index: -1;}
+#util a span{display: inline-block; width: 18px; height: 18px;  position: absolute; text-align: center; line-height: 18px; color: #fff; font-family: Tmon;z-index: 1;}
+#util a{display: block;float: left;}

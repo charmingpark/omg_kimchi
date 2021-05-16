@@ -5,8 +5,8 @@ body, h1, h2, h3,/*  */ button, ul{margin: 0;padding: 0;}
 ul, li{list-style: none;}
 a:link, a:visited, a:hover, a:active{text-decoration: none; color: inherit;}
 h1, h2, h3/*  */{font-size: inherit/*  */; font-weight: normal; }
-img{border: 0;vertical-align: top;}
-button{border: 0; background: none; font-size: inherit; font-weight: inherit; font-family: inherit;}
+img{border: 0;vertical-align: bottom;}
+button{border: 0; background: none; font-size: inherit; font-weight: inherit; font-family: inherit; cursor: pointer;}
 header, nav,section, footer/*  */{display: block;}
 
 /* font */
@@ -30,19 +30,10 @@ body{font-size: 16px; font-family: Noto Sans KR; color: #333;}
 .inner{position: relative; width: 1414px; margin: 0 auto; padding-top: 20px;}
 .inner h1.logo a img{position: absolute; width: 220px; height: 77.5px;}#gnb{position: absolute;}
 
-#lang, #util{position: absolute;}
-#lang::before{content: ""; position: relative;}
-#lang .current{cursor: pointer;}
-#lang ul{display: none;/* .on */ position: absolute; right: -8px; z-index: 100; padding: 7px 0;
-  border: 1px solid #ccc; background: #fff; text-align: center; font-size: 12px;}
-#lang ul li a{padding: 4px 14px; line-height: 1.4;}
+#util_wrap{background: rgba(0, 0, 0, 0.15); position: absolute; width: 226.1px;height: 55px; right: 23px;}
 
-#util{display: flex;}
-#util a{display: block; margin-right: 15px;}
-#util a img{height: 44px;}
-#util a:first-child{position: relative;}
-#util a span{position: absolute; display: block; right: -3px; top: -5px; text-align: center; width: 18px; height: 18px; line-height: 18px; border-radius: 50%; background: #ef2900; color: #fff; font-size: 11px; font-family: Tmon;}
-  
+
+/* nav#gnb */  
 #gnb{width: 700px; height: 60px; bottom: 0; background:#0080001a; left: 0;right: 0; margin: 0 auto;}
 #gnb>ul{ display: flex; justify-content: space-between;}
 #gnb>ul>li{position: relative;}
@@ -51,5 +42,5 @@ body{font-size: 16px; font-family: Noto Sans KR; color: #333;}
 #gnb ul li ul li{text-align: left; font-family: "Noto Sans KR"; width: auto; width: 150px; height: 42px; line-height: 42px;}
 #gnb ul li ul li a{height: 100%;}
 #gnb ul li ul li:hover a{font-weight: 600;}
-/* nav#gnb */
+
 

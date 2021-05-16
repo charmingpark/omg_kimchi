@@ -1,0 +1,22 @@
+#lang, #util{position: absolute;}
+#lang::before{content: ""; position: relative;}
+#lang .current{}
+
+
+#util{display: flex;}
+
+#util_wrap .lang, #util_wrap #util a img{height: 55px;}
+
+
+
+right: -3px; top: -5px; text-align: center; width: 18px; height: 18px; line-height: 18px; border-radius: 50%; background: #ef2900; color: #fff; font-size: 11px; font-family: Tmon;}
+
+
+
+#lang{display: inline-block;}
+#lang button .lang{display: inline-block; } 
+
+#lang{right: 0; top: 48px;}
+#util{right: 42px; top: 50px;}
+#util a span{line-height: 21px;}
+
