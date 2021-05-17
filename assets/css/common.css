@@ -6,7 +6,7 @@ ul, li{list-style: none;}
 a:link, a:visited, a:hover, a:active{text-decoration: none; color: inherit;}
 h1, h2, h3/*  */{font-size: inherit/*  */; font-weight: normal; }
 img{border: 0;vertical-align: bottom;}
-button{border: 0; background: none; font-size: inherit; font-weight: inherit; font-family: inherit; cursor: pointer;}
+button{border: 0; background: none; font-size: inherit; font-weight: inherit; font-family: inherit; }
 header, nav,section, footer/*  */{display: block;}
 
 /* font */
@@ -20,27 +20,40 @@ body{font-size: 16px; font-family: Noto Sans KR; color: #333;}
 
 .bdshape{border-radius: 0% 0% 30px 0%;}
 .shadow{box-shadow:0 2px 20px rgba(0, 0, 0, 0.15);}
-
+.inner{width: 1414px; margin: 0 auto;}
 
 /*** header ***/
-#header-wrap{position: relative; width: 100%; position: fixed;/* 맘에 안들면 고정으로 바꾸기 */border-bottom: 1px solid #333 ;}
+#header-wrap{position: relative; width: 100%; position: fixed; background: #fff;/* 맘에 안들면 고정으로 바꾸기 */}
 /* lang */
-.current{}
-
-.inner{position: relative; width: 1414px; margin: 0 auto; padding-top: 20px;}
-.inner h1.logo a img{position: absolute; width: 220px; height: 77.5px;}#gnb{position: absolute;}
-
-#util_wrap{background: rgba(0, 0, 0, 0.15); position: absolute; width: 226.1px;height: 55px; right: 23px;}
-
+#header .inner{position: relative; padding-top: 20px;}
+#header .inner h1.logo a img{position: absolute; width: 220px; height: 77.5px;}#gnb{position: absolute;}
 
 /* nav#gnb */  
-#gnb{width: 700px; height: 60px; bottom: 0; background:#0080001a; left: 0;right: 0; margin: 0 auto;}
+#gnb{width: 700px; height: 60px; bottom: 0; left: 0;right: 0; margin: 0 auto;}
 #gnb>ul{ display: flex; justify-content: space-between;}
-#gnb>ul>li{position: relative;}
-#gnb>ul>li>a{ display: block; padding: 18px 28px; font-family: Tmon; font-size: 18px;}
-#gnb ul li ul{position: absolute; padding: 20px 0 20px 26px; background: rgba(0, 0, 0, 0.13); font-size: 16px; color: #343434; border-radius: 0 0 15px 15px;}
-#gnb ul li ul li{text-align: left; font-family: "Noto Sans KR"; width: auto; width: 150px; height: 42px; line-height: 42px;}
-#gnb ul li ul li a{height: 100%;}
-#gnb ul li ul li:hover a{font-weight: 600;}
+#gnb>ul>li{position: relative; color: #343434; -webkit-transition: all 0.2s; -moz-transition: all 0.2s;  -o-transition: all 0.2s; transition: all 0.2s;margin: 0 28px;}
+#gnb>ul>li>a{ display: block; padding: 18px 0; font-family: Tmon; font-size: 18px;}
+#gnb ul li ul{position: absolute; left: -22px; padding: 20px 0 20px 26px; background: rgba(255, 255, 255, 0.65); font-size: 16px;  border-radius: 0 0 15px 15px;}
+#gnb ul li ul li{text-align: left; font-family: "Noto Sans KR"; width: auto; width: 150px; height: 42px; line-height: 42px; color: #444444;}
+#gnb ul li ul li a{height: 100%;-webkit-transition: all 0.2s; -moz-transition: all 0.2s;  -o-transition: all 0.2s; transition: all 0.2s;}
+#gnb ul li ul li:hover a, #gnb ul li ul li:focus a{font-weight: 600; letter-spacing: 0.4px;}
+#gnb> ul> li:hover{color: #ff1900;position: relative;}
+#gnb> ul> li> a::after{background: transparent; -webkit-transition: all 0.2s; -moz-transition: all 0.2s;  -o-transition: all 0.2s; transition: all 0.2s;}
+#gnb> ul> li:hover> a::after{content: ""; position: absolute; box-sizing: border-box; width: 100%;height: 3px; background: #ff1900; left: 0;right: 0;margin: 20px auto;}
 
 
+
+
+
+
+/* footer */
+#footer{position: relative; width: 100%; height: 433px;background: url(../imgs/common/footer/footer_bg-80.jpg)no-repeat 100% / cover;}
+#footer #top{position: absolute; right: 240px; top: -40px; width: 80px;height: 80px;background: #000; color: #fff;font-weight: 600;text-align: center;line-height: 100px;letter-spacing: 1px;}
+#footer #top::after{content: "";}/* 화살표 가로세로 */
+
+#footer .inner ul{position: absolute; width: 1414px;height: 160px; display: flex;background: rgba(0, 0, 0, 0.1);top: -80px;}
+#footer .inner ul li{height: 160px;width: calc(100% / 3);position: relative;color: #5C0808;}
+#footer .inner ul li a{position: absolute;width: 435px;height: 80px;right: 0;bottom: 0; padding: 80px 0 0 35px;}
+#footer .inner ul li:nth-of-type(1){background: url(../imgs/common/footer/f_quick_resv-80.jpg)}
+#footer .inner ul li:nth-of-type(2){background: url(../imgs/common/footer/f_quick_point-80.jpg);}
+#footer .inner ul li:nth-of-type(3){background: url(../imgs/common/footer/f_quick_delvry-80.jpg);}

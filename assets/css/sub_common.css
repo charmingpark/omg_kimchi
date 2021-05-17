@@ -8,9 +8,12 @@
 #lang ul li {width: 28px; height: 17px; padding: 2px 14px; line-height: 1.4;}
 #lang ul li:hover a{font-weight: 600;}
 
-#util{position: absolute; bottom: 0;}
+#util_wrap{position: absolute; width: 226.1px;height: 55px; right: 23px;}
+#util{position: absolute; bottom: 0; }
 #util a img{height: 55px;}
 #util a:first-child{position: relative; }
-#util a span::before{content: ""; position: absolute; width: 18px; height: 18px; border-radius: 50%; background: #ef2900; font-size: 11px;z-index: -1;}
-#util a span{display: inline-block; width: 18px; height: 18px;  position: absolute; text-align: center; line-height: 18px; color: #fff; font-family: Tmon;z-index: 1;}
+#util a span{position: absolute; width: 18px; height: 18px; border-radius: 50%; background: #ef2900; font-size: 11px; display: inline-block; text-align: center; line-height: 20px; color: #fff; font-family: Tmon; right: 10px;top: 3px;}
 #util a{display: block;float: left;}
+
+
+#section_wrap{padding-top: 116px;height: 3000px; background: #ef28001f;}
