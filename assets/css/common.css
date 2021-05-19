@@ -71,10 +71,39 @@ none;transition: top 0.5s;}
 
 #footer .speed-big-menu.inner{position: absolute; height: 210px; top: -100px; left: 0;right: 0;margin: 0 auto; background: rgba(0, 0, 0, 0.329);}
 #footer .speed-big-menu.inner ul{display: flex; height: 100%;}
-#footer .speed-big-menu.inner li{width: calc(100% / 3); height: 100%; border: 1px solid #000;}
-#footer .speed-big-menu.inner li:nth-of-type(1) {background: url(../imgs/common/footer/);}
-#footer .speed-big-menu.inner li:nth-of-type(2) {background: url(../imgs/common/footer/);} 
-#footer .speed-big-menu.inner li:nth-of-type(3) {background: url(../imgs/common/footer/);}
+#footer .speed-big-menu.inner li{position: relative; width: calc(100% / 3); height: 100%; }
+#footer .speed-big-menu.inner li:nth-of-type(1) {background: url(../imgs/common/footer/1x/f-resv-bg-100.jpg);}
+#footer .speed-big-menu.inner li:nth-of-type(2) {background: url(../imgs/common/footer/1x/f-point-bg-100.jpg);} 
+#footer .speed-big-menu.inner li:nth-of-type(3) {background: url(../imgs/common/footer/1x/f-dlvry-bg-100.jpg);}
+
+#footer .speed-big-menu.inner li::after{content: ''; position: absolute; width: 200px;height: 100%; top: 0;right: 0;-webkit-transition: transform 0.4s;
+-moz-transition: transform 0.4s;
+-o-transition: transform 0.4s;
+transition: transform 0.4s;}
+
+#footer .speed-big-menu.inner li:nth-of-type(1)::after {background: url(../imgs/common/footer/1x/f-resv-icon.svg);}
+#footer .speed-big-menu.inner li:nth-of-type(2)::after {background: url(../imgs/common/footer/1x/f-point-icon.svg);} 
+#footer .speed-big-menu.inner li:nth-of-type(3)::after {background: url(../imgs/common/footer/1x/f-dlvry-icon.svg);}
+
+
+#footer .speed-big-menu.inner li:nth-of-type(1):hover::after,
+#footer .speed-big-menu.inner li:nth-of-type(2):hover::after,
+#footer .speed-big-menu.inner li:nth-of-type(3):hover::after
+{transform: translateY(-10px);}
+
+#footer .speed-big-menu.inner li .txt{position: absolute; left: 35px;
+top: 80px; color: #5b0808;}
+
+#footer .speed-big-menu.inner li .arrow 
+{position: relative; display: block; width:30px;height:2px; background: #5b0808;top: 80%;left: 40px;}
+#footer .speed-big-menu.inner li:hover .arrow {width:60px;-webkit-transition: width 0.8s;
+  -moz-transition: width 0.8s;
+  -o-transition: width 0.8s;
+  transition: width 0.8s;}
+
+#footer .speed-big-menu.inner li .arrow::after {content: ''; position: absolute; width: 16px;height: 8px; bottom: 0;right:-5px;background: url(../imgs/common/footer/1x/f-arrow\ 8-16.svg);}
+
+
 
 
 /* footer-wrap */

@@ -98,9 +98,7 @@
   height: 600px;
   font-size: 50px;
   text-align: center;
-  background: #ef28001f
-    /* bg */
-  ;
+  background: url(../imgs/brand/mock-up-100.jpg)no-repeat 100% / cover;
   font-family: Tmon;
 }
 
