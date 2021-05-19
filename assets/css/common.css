@@ -47,10 +47,10 @@ body{font-size: 16px; font-family: Noto Sans KR; color: #333;}
 #gnb ul li ul{position: absolute; left: -22px; padding: 20px 0 20px 26px; background: rgba(255, 255, 255, 0.95); font-size: 16px;  border-radius: 0 0 15px 15px;}
 #gnb ul li ul li{text-align: left; font-family: "Noto Sans KR"; width: auto; width: 150px; height: 42px; line-height: 42px; color: #444444;}
 #gnb ul li ul li a{height: 100%;-webkit-transition: all 0.2s; -moz-transition: all 0.2s;  -o-transition: all 0.2s; transition: all 0.2s;}
-#gnb ul li ul li:hover a, #gnb ul li ul li:focus a{font-weight: 600; letter-spacing: 0.4px;}
-#gnb> ul> li:hover, #gnb> ul> li:focus{color: #ff1900;position: relative;}
+#gnb ul li ul li:hover a, #gnb ul li ul li a:focus{font-weight: 600; letter-spacing: 0.4px;}
+#gnb> ul> li:hover, #gnb> ul> li> a:focus{color: #ff1900;position: relative;}
 #gnb> ul> li> a::after{background: transparent; -webkit-transition: all 0.2s; -moz-transition: all 0.2s;  -o-transition: all 0.2s; transition: all 0.2s;}
-#gnb> ul> li:hover> a::after, #gnb> ul> li:focus> a::after{content: ""; position: absolute; box-sizing: border-box; width: 100%;height: 3px; background: #ff1900; left: 0;right: 0;margin: 20px auto;}
+#gnb> ul> li:hover> a::after, #gnb> ul> li> a:focus::after{content: ""; position: absolute; box-sizing: border-box; width: 100%;height: 3px; background: #ff1900; left: 0;right: 0;margin: 20px auto;}
 
 
 
@@ -88,7 +88,10 @@ transition: transform 0.4s;}
 
 #footer .speed-big-menu.inner li:nth-of-type(1):hover::after,
 #footer .speed-big-menu.inner li:nth-of-type(2):hover::after,
-#footer .speed-big-menu.inner li:nth-of-type(3):hover::after
+#footer .speed-big-menu.inner li:nth-of-type(3):hover::after,
+#footer .speed-big-menu.inner li:nth-of-type(1) a:focus::after,
+#footer .speed-big-menu.inner li:nth-of-type(2) a:focus::after,
+#footer .speed-big-menu.inner li:nth-of-type(3) a:focus::after
 {transform: translateY(-10px);}
 
 #footer .speed-big-menu.inner li .txt{position: absolute; left: 35px;
@@ -96,14 +99,14 @@ top: 80px; color: #5b0808;}
 
 #footer .speed-big-menu.inner li .arrow 
 {position: relative; display: block; width:30px;height:2px; background: #5b0808;top: 80%;left: 40px;}
-#footer .speed-big-menu.inner li:hover .arrow {width:60px;-webkit-transition: width 0.8s;
+#footer .speed-big-menu.inner li:hover .arrow, #footer .speed-big-menu.inner li a:focus .arrow {width:60px;-webkit-transition: width 0.8s;
   -moz-transition: width 0.8s;
   -o-transition: width 0.8s;
   transition: width 0.8s;}
+  /* TODO: focus안됨 */
 
 #footer .speed-big-menu.inner li .arrow::after {content: ''; position: absolute; width: 16px;height: 8px; bottom: 0;right:-5px;background: url(../imgs/common/footer/1x/f-arrow\ 8-16.svg);}
-
-
+#footer .speed-big-menu.inner li a{position: absolute; width: 100%;height: 100%;}
 
 
 /* footer-wrap */
@@ -123,7 +126,7 @@ text-align: center;}
 .btns a+a, .text-box a{margin-left: 10px;}
 .footer-wrap .sns-menu{position: absolute; right: 0;top: 50px;}
 .footer-wrap .sns-menu li a img{width: 25px;height: 25px;}
-.footer-wrap .sns-menu li a:hover img, .footer-wrap .sns-menu li a:focus im{opacity: 0.7;}
+.footer-wrap .sns-menu li a:hover img, .footer-wrap .sns-menu li a:focus img{opacity: 0.7;}
 .footer-wrap .sns-menu li{float: left; margin-left: 15px;}
 .footer-text{margin: 20px 0;}
-.footer-text p+p{position: relative;}
+.footer-text p+p{position: relative;} 
