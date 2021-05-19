@@ -22,10 +22,10 @@
 
 #util a:first-child { position: relative; } 
 
-#util a span { position: absolute; width: 18px; height: 18px; border-radius: 50%; background: #ef2900; font-size: 11px; display: inline-block; text-align: center; line-height: 20px; color: #fff; font-family: Tmon; right: 10px; top: 3px; } 
+#util a span { position: absolute; width: 18px; height: 18px; border-radius: 50%; background: #f02900; font-size: 11px; display: inline-block; text-align: center; line-height: 20px; color: #fff; font-family: Tmon; right: 10px; top: 3px; } 
 
 /* dbody */
-.section_wrap { padding-top: 116px; height: 3000px; background: #ef28001f; } 
+#dbody {padding-top: 116px;} 
 
 .nav-list { display: none; } 
 
@@ -54,6 +54,17 @@
 .location-data .location { position: absolute; top: 0; right: 0; overflow: hidden; color: #bab5af; } 
 .location>li { position: relative; line-height: 50px; float: left; } 
 
-.location>li+li { padding-left: 25px;; } 
+.location>li+li { padding-left: 25px; } 
 .location>li+li::after { position: absolute; content: ''; display: block; width: 6px; height: 12px; top: calc(50% - 4px); left: 10px; background: url(../imgs/sub_common/sub_nav_road.svg) 6px 12px / cover}
 
+/* section_wrap */
+#section_wrap .inner section{margin-top: 400px;}
+#section_wrap .inner section+section{margin: 85px 0;}
+#section_wrap .inner #cont1{background: #fff;text-align: center;}
+#section_wrap .inner #cont1 h3{font-size: 135px; color: #f02900;}
+#section_wrap .inner #cont1 div{font-weight: 600;font-size: 30px; padding: 45px 0 200px; color: #6b6b6b;}
+#section_wrap .inner #cont1 p{font-size: 22px; }
+
+#section_wrap .inner #cont2{height: 635px;background: #0c10e22d;}
+#section_wrap .inner #cont3{height: 635px;background: #0c10e22d;}
+#section_wrap .inner #cont4{height: 635px;background: #0c10e22d; margin: 15px 0 288px;}
