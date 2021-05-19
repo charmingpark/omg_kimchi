@@ -11,6 +11,7 @@
   height: 55px;
   background: url(../imgs/sub_common/lang.svg)no-repeat 100% 100% / cover;
 }
+#lang button div:hover, #lang button div a:focus {opacity: 0.5;}
 
 #lang button {
   position: relative;
