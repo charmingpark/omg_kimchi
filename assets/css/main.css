@@ -5,17 +5,15 @@
 .inner h1.logo a img{left: 566px;}
 
 #lang{position: absolute;top: 35px;}
-#lang button div{display: block; width: 65px;height: 25px;background: url(../imgs/main/header/lang.svg)no-repeat 100% 100% / cover;}
+#lang button div{display: block; width: 65px;height: 25px;background: url(../imgs/main/header/lang.svg)no-repeat 100% / contain;}
 #lang button{position: relative;left: 0px;}
-#lang .lang:hover/*  ,#lang a:focus .lang */{opacity: 0.5;}
-/* TODO: focus가 안됨 */      
 #lang ul{display: block; position: absolute; left: 15px; top: 30px; z-index: 100; padding: 7px 0; border: 1px solid #ccc; background: #fff; text-align: center; font-size: 12px;}
 #lang ul li {width: 28px; height: 17px; padding: 2px 14px; line-height: 1.4;}
-#lang ul li:hover a, #lang ul li a:focus{font-weight: 600;}
+
 
 #util{position: absolute; height: 0; right: 0px;}
 #util a img{height: 55px;}
-#util a:hover img, #util a:focus img{opacity: 0.5;}
+
 #util a:first-child{position: relative; }
 #util a span{position: absolute; width: 18px; height: 18px; border-radius: 50%; background: #ef2900; font-size: 11px; display: inline-block; text-align: center; line-height: 20px; color: #fff; font-family: Tmon; right: 10px;top: 3px;}
 #util a{display: block;float: left;}
