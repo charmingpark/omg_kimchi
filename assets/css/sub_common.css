@@ -2,9 +2,7 @@
 /* header */
 #header-wrap { height: 116px; } 
 
-#lang button div { display: block; width: 46px; height: 55px; background: url(../imgs/sub_common/lang.svg)no-repeat 100% / contain; } 
-
-#lang button { position: relative; left: 180px; } 
+#lang button{ display: block; width: 46px; height: 55px; background: url(../imgs/sub_common/lang.svg) no-repeat 0 / contain; position: relative; left: 180px; padding-bottom: 5px;} 
 
 #lang ul { display: block; position: absolute; right: -6px; z-index: 100; padding: 7px 0; border: 1px solid #ccc; background: #fff; text-align: center; font-size: 12px; } 
 

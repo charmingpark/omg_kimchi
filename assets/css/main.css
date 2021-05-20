@@ -4,9 +4,8 @@
 .inner h1.logo a img { left: 566px; } 
 
 #lang { position: absolute; top: 35px; } 
-#lang button div { display: block; width: 65px; height: 25px; background: url(../imgs/main/header/lang.svg)no-repeat 100% / contain; } 
-#lang button { position: relative; left: 0px; } 
-#lang ul { display: block; position: absolute; left: 15px; top: 30px; z-index: 100; padding: 7px 0; border: 1px solid #ccc; background: #fff; text-align: center; font-size: 12px; } 
+#lang button { display: block; width: 65px; height: 30px; background: url(../imgs/main/header/lang.svg) no-repeat 0 / contain; position: relative; left: 0px; padding-bottom: 5px;} 
+#lang ul {position: absolute; left: 15px; top: 30px; z-index: 100; padding: 7px 0; border: 1px solid #ccc; background: #fff; text-align: center; font-size: 12px; } 
 #lang ul li { width: 28px; height: 17px; padding: 2px 14px; line-height: 1.4; } 
 
 
