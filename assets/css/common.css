@@ -28,7 +28,8 @@ body{ font-size: 16px; font-family: Noto Sans KR; color: #333; }
 #header-wrap { position: relative; width: 100%; position: absolute; background: #fff; z-index: 9000; /* main.html에서는 스크롤이 슬라이더를 지나면 sub형식의 header가 되도록. */ } 
 /* lang */
 #header .inner { position: relative; padding-top: 20px; } 
-#header .inner .logo{ position: absolute; top: 20px;left: 566px; } 
+#header .inner .logo{ position: absolute; top: 20px;} 
+
 #header .inner h1.logo a img { width: 220px; } 
 
 #lang button:hover ,#lang button:focus { opacity: 0.5; } 
