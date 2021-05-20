@@ -14,7 +14,7 @@ body{ font-size: 16px; font-family: Noto Sans KR; color: #333; }
 
 /* common */
 #skip a { position: absolute; top: 0; left: -9999px; z-index: 10000; } 
-#skip a:focus { width: 100%; height: 50px; line-height: 50px; left: 0; outline: 2px solid #ff1900; text-align: center; color: #fff; background: #000; font-weight: 500;} 
+#skip a:focus { left: 0; width: 100%; height: 50px; line-height: 50px; outline: 2px solid #ff1900; text-align: center; color: #fff; background: #000; font-weight: 500;} 
 
 .blind { width: 1px; height: 1px; border: 0; overflow: hidden; position: absolute; clip: rect(1px 1px 1px 1px); clip-path: inset(50%) } 
 .clearfix::after { content: ''; display: block; clear: both; } 
@@ -25,10 +25,12 @@ body{ font-size: 16px; font-family: Noto Sans KR; color: #333; }
 .txt-nxt::after { content: ''; position: absolute; top: calc(50% + 2px); right: -10px; display: block; width: 1px; height: 12px; margin-top: -6px; background-color: rgb(0, 0, 0); opacity: 0.2; } 
 
 /*** header ***/
-#header-wrap { position: relative; width: 100%; position: absolute; background: #fff; z-index: 10000; /* main.html에서는 스크롤이 슬라이더를 지나면 sub형식의 header가 되도록. */ } 
+#header-wrap { position: relative; width: 100%; position: absolute; background: #fff; z-index: 9000; /* main.html에서는 스크롤이 슬라이더를 지나면 sub형식의 header가 되도록. */ } 
 /* lang */
 #header .inner { position: relative; padding-top: 20px; } 
-#header .inner h1.logo a img { position: absolute; width: 220px; height: 77.5px; } 
+#header .inner .logo{ position: absolute; top: 20px;left: 566px; } 
+#header .inner h1.logo a img { width: 220px; } 
+
 #lang button:hover ,#lang button:focus { opacity: 0.5; } 
 #lang ul{display: none;}
 #lang ul li:hover a, #lang ul li a:focus { font-weight: 600; } 
@@ -40,6 +42,7 @@ body{ font-size: 16px; font-family: Noto Sans KR; color: #333; }
 #gnb>ul { display: flex; justify-content: space-between; } 
 #gnb>ul>li { position: relative; color: #343434; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; margin: 0 28px; } 
 #gnb>ul>li>a { display: block; padding: 18px 0; font-family: Tmon; font-size: 18px; } 
+#gnb>ul>li>a:focus{position: relative;z-index: 1;} /* 하단에 잘리는 아웃라인 제어 */
 #gnb ul li ul { position: absolute; left: -22px; padding: 20px 0 20px 26px; background: rgba(255, 255, 255, 0.95); font-size: 16px; border-radius: 0 0 15px 15px; } 
 #gnb ul li ul li { text-align: left; font-family: "Noto Sans KR"; width: auto; width: 150px; height: 42px; line-height: 42px; color: #444444; } 
 #gnb ul li ul li a { height: 100%; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; } 
@@ -65,7 +68,8 @@ body{ font-size: 16px; font-family: Noto Sans KR; color: #333; }
 #footer { position: relative; width: 100%; height: 433px; background: url(../imgs/common/footer/footer_bg-80.jpg) no-repeat 100% / cover; padding-top: 160px; box-sizing: border-box; } 
 #footer #top { position: absolute; right: -110px; top: calc(50% - 45px); width: 80px; height: 80px; background: #000; color: #fff; font-weight: 600; text-align: center; line-height: 100px; letter-spacing: 1px; } 
 #footer #top::after { content: ""; position: absolute; top: 25px; left: 0; right: 0; margin: 0 auto; display: block;width: 0; height: 0;border-bottom: 10px solid #fff; border-right: 12px solid transparent;border-left: 12px solid transparent; border-top: 0px solid 
-none; transition: top 0.5s; } 
+none; -webkit-transition: top 0.5s;-moz-transition: top 0.5s;-o-transition: top 0.5s;transition: top 0.5s; 
+transition: top 0.5s; } 
 #footer #top:hover::after, #footer #top:focus::after { top: 15px; } 
 
 #footer .speed-big-menu.inner { position: absolute; height: 210px; top: -100px; left: 0; right: 0; margin: 0 auto; } 
