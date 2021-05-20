@@ -1,6 +1,7 @@
 @charset "utf-8";@import url(font.css);/* reset */
 body, h1, h2, h3,/* */ button, ul, p { margin: 0; padding: 0; } 
 ul, li { list-style: none; } 
+em {font-style: normal;}
 a:link, a:visited, a:hover, a:active { text-decoration: none; color: inherit; } 
 h1, h2, h3/* */ { font-size: inherit/* */; font-weight: normal; } 
 img { border: 0; vertical-align: bottom; } 
@@ -8,7 +9,7 @@ button { border: 0; background: none; font-size: inherit; cursor: pointer; font-
 header, nav, section, article, footer { display: block; } 
 
 /* font */
-body { font-size: 16px; font-family: Noto Sans KR; color: #333; } 
+body{ font-size: 16px; font-family: Noto Sans KR; color: #333; } 
 .Tmon { font-family: Tmon; } 
 
 /* common */
@@ -50,8 +51,15 @@ body { font-size: 16px; font-family: Noto Sans KR; color: #333; }
 /* section */
 #section_wrap >.inner{background: #0ce26c2d;}
 
-
-
+/* tab - bestFour */
+.tab-box > ul{position: absolute; height: 70px; margin-bottom: 55px; right: 0; top: 2px;}
+/* cont$가 por */
+.tab-box li.tab{float: left; height: 21px; margin: 10px; text-align: center; cursor: pointer; color: #ccc; position: relative; }
+.tab-box .tab:hover, .tab-box .tab:focus, .tab-box .tab.active{color: #ef2800;}
+.tab-box .tab:hover::after, .tab-box .tab:focus::after, .tab-box .tab.active::after{content: ''; position: absolute; left: 0; bottom: -10px; width: 100%; height: 2px; background-color: #ef2800;}
+.tab-box li.tab span{font-size: 21px; line-height: 21px; }
+.tab-box .tabpanel{display: none;}
+.tab-box .tabpanel.active{display: block;}
 
 /* footer */
 #footer { position: relative; width: 100%; height: 433px; background: url(../imgs/common/footer/footer_bg-80.jpg) no-repeat 100% / cover; padding-top: 160px; box-sizing: border-box; } 
@@ -105,7 +113,7 @@ none; transition: top 0.5s; }
 .btns a, .text-box a { display: inline-block; width: 88px;height: 28px; line-height: 26px; border: 1px solid #b1ada6;text-align: center; } 
 .text-box a { position: absolute; width: 120px; top: -1px; } 
 
-.text-box em { font-weight: 700; font-size: 15px; font-style: normal; } 
+.text-box em { font-weight: 700; font-size: 15px; } 
 .btns a:hover, .text-box a:hover, .btns a:focus, .text-box a:focus { text-decoration: underline; opacity: 0.7; } 
 .btns a+a, .text-box a { margin-left: 10px; } 
 .footer-wrap .sns-menu { position: absolute; right: 0; top: 50px; } 
