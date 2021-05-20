@@ -3,6 +3,24 @@ $(document).ready(function (){
 	var $gnb=$("#gnb > ul");
 	$gnb.find(" li ul").hide();	//depth2의 ul 태그는 자동으로 숨기고 시작
 
+	//언어선택
+  $('#lang button').on('mouseenter click', function () {
+		var $btn = $(this);
+    $(this).next().stop().slideDown().parent().addClass('active');
+
+    $('#lang').on('mouseleave', function () {
+      $(this).find('ul').stop().slideUp().parent().removeClass('active');
+    });
+
+		//언어선택이 열린채로 포커스가 나가면 닫아주자
+		$(this).on('keydown', function (e) {
+      if (e.shiftKey && e.keyCode === 9) $('#lang').mouseleave();
+    });
+    $('#lang ul li:last a').on('keydown', function (e) {
+      if ( !e.shiftKey && e.keyCode === 9 ) $('#lang').mouseleave();
+    });
+  });
+
 	//1)depth1 <a>에 마우스 진입:mouseenter, focus
 	$gnb.find("> li > a").on("mouseenter focus",function  () {
 		//초기화
