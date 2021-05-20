@@ -1,4 +1,7 @@
-@charset "utf-8";@import url(font.css);/* reset */
+@charset "utf-8";
+@import url(font.css);
+
+/* reset */
 body, h1, h2, h3,/* */ button, ul, p { margin: 0; padding: 0; } 
 ul, li { list-style: none; } 
 em {font-style: normal;}
@@ -83,7 +86,6 @@ transition: top 0.5s; }
 #footer .speed-big-menu.inner li:nth-of-type(2)::after { background: url(../imgs/common/footer/1x/f-point-icon.svg); } 
 #footer .speed-big-menu.inner li:nth-of-type(3)::after { background: url(../imgs/common/footer/1x/f-dlvry-icon.svg); } 
 
-
 #footer .speed-big-menu.inner li:nth-of-type(1):hover::after,
 #footer .speed-big-menu.inner li:nth-of-type(2):hover::after,
 #footer .speed-big-menu.inner li:nth-of-type(3):hover::after,
@@ -97,10 +99,8 @@ transform: translateY(-10px); }  /* TODO: focus안됨 */
 #footer .speed-big-menu.inner li .arrow{ position: relative; display: block; width:30px; height:2px; background: #5b0808; top: 80%; left: 40px; } 
 #footer .speed-big-menu.inner li:hover .arrow, #footer .speed-big-menu.inner li a:focus .arrow { width:60px; -webkit-transition: width 0.8s; -moz-transition: width 0.8s; -o-transition: width 0.8s; transition: width 0.8s; } 
 
-
 #footer .speed-big-menu.inner li .arrow::after { content: ''; position: absolute; width: 16px; height: 8px; bottom: 0; right:-5px; background: url(../imgs/common/footer/1x/f-arrow\ 8-16.svg); } 
 #footer .speed-big-menu.inner li a { position: absolute; width: 100%; height: 100%; } 
-
 
 /* footer-wrap */
 .footer-wrap { position: relative; font-size: 13px; line-height: 2; font-weight: 600; color: #727272; } 
