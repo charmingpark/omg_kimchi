@@ -68,24 +68,24 @@
 #cont2 .tabpanel ul li a p span>em { font-size: 18px; color: inherit; } 
 
 /* cont3 */
-#cont3 .time-table ul {box-shadow:0 2px 20px rgba(0, 0, 0, 0.15);} 
-#cont3 .time-table ul li a { float: left; width: 20%; text-align: center; font-weight: 600; border: 1px solid #f2f2f2; box-sizing: border-box; margin-bottom: 20px; } 
-#cont3 .time-table ul li:first-child a{border-left: none;}
-#cont3 .time-table ul li:last-child a{border-right: none;}
+ .time-table ul {box-shadow:0 2px 20px rgba(0, 0, 0, 0.15);margin-bottom: 20px; } 
+ .time-table ul li a { float: left; width: 20%; text-align: center; font-weight: 600; border: 1px solid #f2f2f2; box-sizing: border-box; } 
+ .time-table ul li:first-child a{border-left: none;}
+ .time-table ul li:last-child a{border-right: none;}
 
-#cont3 .time-table ul li a { border-top: 3px solid #d1d1d1; color: #888; } 
-#cont3 .time-table ul li a:hover .day, #cont3 .time-table ul li a:focus .day { color: #ef2800; } 
-#cont3 .time-table ul li a:hover, #cont3 .time-table ul li a:focus { border-top-color: #ef2800;} 
-#cont3 .time-table .day { height: 48px; line-height: 48px; background: #f7f7f7; } 
-#cont3 .time-table .day, #cont3 .time-table .time{letter-spacing: 5px}
-#cont3 .time-table .menu { position: relative; height: 130px; } 
-#cont3 .time-table .menu p { position: absolute; bottom: 8px; width: 100%; } 
-#cont3 .time-table .menu1 { background: url(../imgs/main/cont3-3/1x/menu1-100.jpg); } 
-#cont3 .time-table .menu2 { background: url(../imgs/main/cont3-3/1x/menu2-100.jpg); } 
-#cont3 .time-table .menu3 { background: url(../imgs/main/cont3-3/1x/menu3-100.jpg); } 
-#cont3 .time-table .menu4 { background: url(../imgs/main/cont3-3/1x/menu4-100.jpg); } 
-#cont3 .time-table .menu5 { background: url(../imgs/main/cont3-3/1x/menu5-100.jpg); } 
-#cont3 .time-table .time { height: 88px; padding-top: 20px; box-sizing: border-box; border-top: 1px solid #f2f2f2; } 
+ .time-table ul li a { border-top: 4px solid #d1d1d1; color: #888; } 
+ .time-table ul li a:hover .day,  .time-table ul li a:focus .day { color: #ef2800; } 
+ .time-table ul li a:hover,  .time-table ul li a:focus { border-top-color: #ef2800;} 
+ .time-table .day { height: 48px; line-height: 48px; background: #f7f7f7; } 
+ .time-table .day,  .time-table .time{letter-spacing: 5px}
+ .time-table .menu { position: relative; height: 130px; } 
+ .time-table .menu p { position: absolute; bottom: 8px; width: 100%; } 
+ .time-table .menu1 { background: url(../imgs/main/cont3-3/1x/menu1-100.jpg); } 
+ .time-table .menu2 { background: url(../imgs/main/cont3-3/1x/menu2-100.jpg); } 
+ .time-table .menu3 { background: url(../imgs/main/cont3-3/1x/menu3-100.jpg); } 
+ .time-table .menu4 { background: url(../imgs/main/cont3-3/1x/menu4-100.jpg); } 
+ .time-table .menu5 { background: url(../imgs/main/cont3-3/1x/menu5-100.jpg); } 
+ .time-table .time { height: 88px; padding-top: 20px; box-sizing: border-box; border-top: 1px solid #f2f2f2; } 
 
 
 
