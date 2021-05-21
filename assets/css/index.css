@@ -123,7 +123,7 @@
 .three_cards .bdshape { width: 400px; height: 540px; } 
 .three_cards .bdshape a { width: 400px; height: 540px; } 
 .three_cards .bdshape h3 { position: relative; margin-top: 290px; font-size: 33px; color: #f63600; } 
-.three_cards .bdshape a:hover h3, .three_cards .bdshape a:focus h3 { color: #333; } 
+.three_cards .bdshape a:hover h3, .three_cards .bdshape a:focus h3 { color: #aaa; } 
 .three_cards .bdshape h3::before { content: ''; position: absolute; width: 300px; height: 188px; left: 50px; bottom: 75px; /*<< TODO: */background: #000; } 
 
 .three_cards .bdshape:nth-child(1) h3::before { background: url(../imgs/main/cont5/bnft-1.svg) no-repeat 100% / contain; } 
