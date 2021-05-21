@@ -125,8 +125,8 @@
 
 /* cont5 */
 #cont5 .three_cards { height: 540px; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; justify-content: space-between; text-align: center; } 
-.three_cards .bdshape { width: 400px; height: 540px; } 
-.three_cards .bdshape a { width: 400px; height: 540px; } 
+.three_cards .bdshape { width: 400px; height: 540px; position: relative;} 
+.three_cards .bdshape a { display: block; position: absolute;top: 0;left: 0; width: 400px; height: 540px; } 
 .three_cards .bdshape h3 { position: relative; margin-top: 290px; font-size: 33px; color: #f63600; } 
 .three_cards .bdshape a:hover h3, .three_cards .bdshape a:focus h3 { color: #aaa; } 
 .three_cards .bdshape h3::before { content: ''; position: absolute; width: 300px; height: 188px; left: 50px; bottom: 75px; /*<< TODO: */background: #000; } 
