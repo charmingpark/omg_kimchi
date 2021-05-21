@@ -25,9 +25,12 @@
 /* dbody */
 #dbody {padding-top: 116px;} 
 
-.nav-list { display: none; } 
+.nav-list {position: relative; display: block; box-sizing: border-box; padding: 15px 20px; line-height: 30px; border: 1px solid #dedede; top: 1px;} 
+.nav-list li {position: relative;}
+.nav-list li a:hover, .nav-list li a:focus  {color: #777;} 
+.nav-list li a:hover::after, .nav-list li a:focus::after  {content: ''; width: 0;height: 0; border-right: 8px solid #BAB5AF; border-bottom: 8px solid transparent; border-top: 8px solid transparent; border-left: 0px solid none; position: absolute;top: 20%; right: 0;} 
 
-.page-title { width: 100%; height: 600px; font-size: 50px; text-align: center; font-family: Tmon; } 
+.page-title { width: 100%; height: 600px; font-size: 50px; text-align: center; font-family: Tmon; }
 
 .page-title span { position: relative; line-height: 580px; color: #fff; top: -10px; } 
 

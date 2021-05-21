@@ -11,7 +11,7 @@
 #cont1 div { font-weight: 600; font-size: 30px; padding: 45px 0 150px; color: #6b6b6b; } 
 #cont1 p { font-size: 22px; } 
 
-#cont2 h3 {font-size: 60px; text-align: center; margin-bottom: 50px; color: #f02900;} 
+section h3 {font-size: 60px; text-align: center; margin-bottom: 50px; color: #f02900;} 
 #cont2 .time-table {margin-bottom: 50px;} 
 #cont2 button {display: block; width: 571px; height: 83px; background: url(../imgs/common/section/button_long.svg) no-repeat 100% / cover; margin: 0 auto; font-size: 30px;font-weight: 700;} 
 #cont2 button:hover, #cont2 button:focus {color: rgb(175, 175, 175);} 
@@ -39,7 +39,16 @@
 .time-table .menu5 { background: url(../imgs/main/cont3-3/1x/menu5-100.jpg); } 
 .time-table .time { height: 88px; padding-top: 20px; box-sizing: border-box; border-top: 1px solid #f2f2f2; } 
 
+#section_wrap .inner #cont3 { height: 635px; background: #0c10e22d; height: 850px;} 
 
 
-#section_wrap .inner #cont3 { height: 635px; background: #0c10e22d; } 
-#section_wrap .inner #cont4 { height: 635px; background: #0c10e22d; margin: 15px 0 288px; } 
+#section_wrap .inner #cont4 .gallery-box { height: 850px; margin: 15px 0 288px; position: relative;} 
+#section_wrap .inner #cont4 .gallery-box div{border: 5px solid #fff; box-sizing: border-box; }
+#section_wrap .inner #cont4 .gallery-box .pht1{background: url(../imgs/brand/gallery/gallery1.jpg) no-repeat 100% / cover; position: absolute; width: 650px;height: 510px;top: 0;left: 0;}
+#section_wrap .inner #cont4 .gallery-box .pht2{background: url(../imgs/brand/gallery/gallery2.jpg) no-repeat 100% / cover; position: absolute; width: 325px;height: 340px; bottom: 0; left: 0;}
+#section_wrap .inner #cont4 .gallery-box .pht3{background: url(../imgs/brand/gallery/gallery3.jpg) no-repeat 100% / cover; position: absolute; width: 325px;height: 340px; bottom: 0; left: 325px;}
+#section_wrap .inner #cont4 .gallery-box .pht4{background: url(../imgs/brand/gallery/gallery4.jpg) no-repeat 100% / cover; position: absolute; width: 384px;height: 270px; top: 0; left: 650px;}
+#section_wrap .inner #cont4 .gallery-box .pht5{background: url(../imgs/brand/gallery/gallery5.jpg) no-repeat 100% / cover; position: absolute; width: 384px;height: 580px; bottom: 0; left: 650px;}
+#section_wrap .inner #cont4 .gallery-box .pht6{background: url(../imgs/brand/gallery/gallery6-100.jpg) no-repeat 50% / cover; position: absolute; width: 380px;height: 570px; top: 0; right: 0px;}
+
+#section_wrap .inner #cont4 .gallery-box .pht7{background: url(../imgs/brand/gallery/gallery7-100.jpg) no-repeat 50% / cover; position: absolute; width: 380px;height: 280px; bottom: 0; right: 0px;}
