@@ -8,11 +8,10 @@
 #lang ul li { width: 28px; height: 17px; padding: 2px 14px; line-height: 1.4; } 
 
 #util { position: absolute; height: 0; right: 0px; } 
-#util a img { height: 55px; } 
-
-#util a:first-child { position: relative; } 
-#util a span { position: absolute; width: 18px; height: 18px; border-radius: 50%; background: #f02900; font-size: 11px; display: inline-block; text-align: center; line-height: 20px; color: #fff; font-family: Tmon; right: 10px; top: 3px; } 
 #util a { display: block; float: left; } 
+#util a:first-child { position: relative; } 
+#util a img { height: 55px; } 
+#util a span { position: absolute; width: 18px; height: 18px; border-radius: 50%; background: #f02900; font-size: 11px; display: inline-block; text-align: center; line-height: 20px; color: #fff; font-family: Tmon; right: 10px; top: 3px; } 
 
 /* section */
 #section_wrap { position: relative; padding-top: 165px; } 
@@ -33,7 +32,7 @@
 
 /* #slick_slider .controller { } */
 #slick_slider .slick-pagination { position: absolute; bottom: 33px; left: 50%; margin-left: -550px; } 
-#slick_slider .slick-pagination ul { display: -webkit-box !important;display: -moz-box !important;display: -ms-flexbox !important;display: -webkit-flex !important;display: flex !important; justify-content: space-between; } 
+#slick_slider .slick-pagination ul { display: -webkit-box !important; display: -moz-box !important; display: -ms-flexbox !important; display: -webkit-flex !important; display: flex !important; justify-content: space-between; } 
 #slick_slider .slick-pagination ul li { width: 55px; height: 5px; margin-right: 6px; background: #ececec; } 
 #slick_slider .slick-pagination ul .slick-active { background: #f02900; } 
 
@@ -139,7 +138,7 @@
 
 
 /* cont6 */
-#cont6 .six_lists { height: 470px; margin: 15px 0 180px; display: flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;flex-wrap: wrap; } 
+#cont6 .six_lists { height: 470px; margin: 15px 0 180px; display: flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; flex-wrap: wrap; } 
 #cont6 .six_lists li { float: left; width: calc(100% / 3); height: 50%; } 
 #cont6 .six_lists li:nth-of-type(1) { background: url(../imgs/main/cont6/rwd-1-100.jpg) no-repeat 100% / cover; } 
 #cont6 .six_lists li:nth-of-type(2) { background: url(../imgs/main/cont6/rwd-2-100.jpg) no-repeat 100% / cover; } 
