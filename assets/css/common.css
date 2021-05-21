@@ -2,11 +2,11 @@
 @import url(font.css);
 
 /* reset */
-body, h1, h2, h3,/* */ button, ul, p { margin: 0; padding: 0; } 
+body, h1, h2, h3, h4, button, ul, p { margin: 0; padding: 0; } 
 ul, li { list-style: none; } 
 em {font-style: normal;}
 a:link, a:visited, a:hover, a:active { text-decoration: none; color: inherit; } 
-h1, h2, h3/* */ { font-size: inherit/* */; font-weight: normal; } 
+h1, h2, h3, h4 { font-size: inherit; font-weight: normal; } 
 img { border: 0; vertical-align: bottom; } 
 button { border: 0; background: none; font-size: inherit; cursor: pointer; font-weight: inherit; font-family: inherit; } 
 header, nav, section, article, footer { display: block; } 

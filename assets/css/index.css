@@ -31,7 +31,7 @@
 #slick_slider .slider_text h2 { font-size: 60px; padding: 20px 0 15px; } 
 #slick_slider .slider_text h3 { font-size: 26px; font-weight: 600; } 
 
-#slick_slider .controller { } 
+/* #slick_slider .controller { }  */
 #slick_slider .slick-pagination { position: absolute; bottom: 33px; left: 50%; margin-left: -550px; } 
 #slick_slider .slick-pagination ul { display: flex !important; justify-content: space-between; } 
 #slick_slider .slick-pagination ul li { width: 55px; height: 5px; margin-right: 6px; background: #ececec; } 
