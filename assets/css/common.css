@@ -1,10 +1,8 @@
-@charset "utf-8";
-@import url(font.css);
-
+@charset "utf-8";@import url(font.css);
 /* reset */
 body, h1, h2, h3, h4, button, ul, p { margin: 0; padding: 0; } 
 ul, li { list-style: none; } 
-em {font-style: normal;}
+em { font-style: normal; } 
 a:link, a:visited, a:hover, a:active { text-decoration: none; color: inherit; } 
 h1, h2, h3, h4 { font-size: inherit; font-weight: normal; } 
 img { border: 0; vertical-align: bottom; } 
@@ -12,12 +10,12 @@ button { border: 0; background: none; font-size: inherit; cursor: pointer; font-
 header, nav, section, article, footer { display: block; } 
 
 /* font */
-body{ font-size: 16px; font-family: Noto Sans KR; color: #333; } 
+body { font-size: 16px; font-family: Noto Sans KR; color: #333; } 
 .Tmon { font-family: Tmon; } 
 
 /* common */
 #skip a { position: absolute; top: 0; left: -9999px; z-index: 10000; } 
-#skip a:focus { left: 0; width: 100%; height: 50px; line-height: 50px; outline: 2px solid #ff1900; text-align: center; color: #fff; background: #000; font-weight: 500;} 
+#skip a:focus { left: 0; width: 100%; height: 50px; line-height: 50px; outline: 2px solid #ff1900; text-align: center; color: #fff; background: #000; font-weight: 500; } 
 
 .blind { width: 1px; height: 1px; border: 0; overflow: hidden; position: absolute; clip: rect(1px 1px 1px 1px); clip-path: inset(50%) } 
 .clearfix::after { content: ''; display: block; clear: both; } 
@@ -31,22 +29,22 @@ body{ font-size: 16px; font-family: Noto Sans KR; color: #333; }
 #header-wrap { position: relative; width: 100%; position: absolute; background: #fff; z-index: 9000; /* main.html에서는 스크롤이 슬라이더를 지나면 sub형식의 header가 되도록. */ } 
 /* lang */
 #header .inner { position: relative; padding-top: 20px; } 
-#header .inner .logo{ position: absolute; top: 20px;} 
+#header .inner .logo { position: absolute; top: 20px; } 
 
 #header .inner h1.logo a img { width: 220px; } 
 
 #lang button:hover ,#lang button:focus { opacity: 0.5; } 
-#lang ul{display: none;}
+#lang ul { display: none; } 
 #lang ul li:hover a, #lang ul li a:focus { font-weight: 600; } 
 #util a:hover img, #util a:focus img { opacity: 0.5; } 
 #gnb { position: absolute; } 
 
 /* nav#gnb */ 
 #gnb { width: 700px; height: 60px; bottom: 0; left: 0; right: 0; margin: 0 auto; } 
-#gnb>ul { display: flex; justify-content: space-between; } 
+#gnb>ul { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;justify-content: space-between; } 
 #gnb>ul>li { position: relative; color: #343434; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; margin: 0 28px; } 
 #gnb>ul>li>a { display: block; padding: 18px 0; font-family: Tmon; font-size: 18px; } 
-#gnb>ul>li>a:focus{position: relative;z-index: 1;} /* 하단에 잘리는 아웃라인 제어 */
+#gnb>ul>li>a:focus { position: relative; z-index: 1; } /* 하단에 잘리는 아웃라인 제어 */
 #gnb ul li ul { position: absolute; left: -22px; padding: 20px 0 20px 26px; background: rgba(255, 255, 255, 0.95); font-size: 16px; border-radius: 0 0 15px 15px; } 
 #gnb ul li ul li { text-align: left; font-family: "Noto Sans KR"; width: auto; width: 150px; height: 42px; line-height: 42px; color: #444444; } 
 #gnb ul li ul li a { height: 100%; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; } 
@@ -56,31 +54,30 @@ body{ font-size: 16px; font-family: Noto Sans KR; color: #333; }
 #gnb> ul> li:hover> a::after, #gnb> ul> li> a:focus::after { content: ""; position: absolute; box-sizing: border-box; width: 100%; height: 3px; background: #f02900; left: 0; right: 0; margin: 20px auto; } 
 
 /* tab - bestFour */
-.tab-box > ul{position: absolute; height: 70px; margin-bottom: 55px; right: 0; top: 2px;}
+.tab-box > ul { position: absolute; height: 70px; margin-bottom: 55px; right: 0; top: 2px; } 
 /* cont$가 por */
-.tab-box li.tab{float: left; height: 21px; margin: 10px; text-align: center; cursor: pointer; color: #ccc; position: relative; font-weight: 700;}
-.tab-box .tab:hover, .tab-box .tab:focus, .tab-box .tab.active{color: #ef2800;}
-.tab-box .tab:hover::after, .tab-box .tab:focus::after, .tab-box .tab.active::after{content: ''; position: absolute; left: 0; bottom: -10px; width: 100%; height: 2px; background-color: #ef2800;}
-.tab-box li.tab span{font-size: 21px; line-height: 21px; }
-.tab-box .tabpanel{display: none;}
-.tab-box .tabpanel.active{display: block;}
+.tab-box li.tab { float: left; height: 21px; margin: 10px; text-align: center; cursor: pointer; color: #ccc; position: relative; font-weight: 700; } 
+.tab-box .tab:hover, .tab-box .tab:focus, .tab-box .tab.active { color: #ef2800; } 
+.tab-box .tab:hover::after, .tab-box .tab:focus::after, .tab-box .tab.active::after { content: ''; position: absolute; left: 0; bottom: -10px; width: 100%; height: 2px; background-color: #ef2800; } 
+.tab-box li.tab span { font-size: 21px; line-height: 21px; } 
+.tab-box .tabpanel { display: none; } 
+.tab-box .tabpanel.active { display: block; } 
 
 /* footer */
 #footer { position: relative; width: 100%; height: 433px; background: url(../imgs/common/footer/footer_bg-80.jpg) no-repeat 100% / cover; padding-top: 160px; box-sizing: border-box; } 
 #footer #top { position: absolute; right: -110px; top: calc(50% - 45px); width: 80px; height: 80px; background: #000; color: #fff; font-weight: 600; text-align: center; line-height: 100px; letter-spacing: 1px; } 
-#footer #top::after { content: ""; position: absolute; top: 25px; left: 0; right: 0; margin: 0 auto; display: block;width: 0; height: 0;border-bottom: 10px solid #fff; border-right: 12px solid transparent;border-left: 12px solid transparent; border-top: 0px solid 
-none; -webkit-transition: top 0.5s;-moz-transition: top 0.5s;-o-transition: top 0.5s;transition: top 0.5s; 
-transition: top 0.5s; } 
+#footer #top::after { content: ""; position: absolute; top: 25px; left: 0; right: 0; margin: 0 auto; display: block; width: 0; height: 0; border-bottom: 10px solid #fff; border-right: 12px solid transparent; border-left: 12px solid transparent; border-top: 0px solid 
+none; -webkit-transition: top 0.5s; -moz-transition: top 0.5s; -o-transition: top 0.5s; transition: top 0.5s;transition: top 0.5s; } 
 #footer #top:hover::after, #footer #top:focus::after { top: 15px; } 
 
 #footer .speed-big-menu.inner { position: absolute; height: 210px; top: -100px; left: 0; right: 0; margin: 0 auto; } 
-#footer .speed-big-menu.inner ul { display: flex; height: 100%; } 
+#footer .speed-big-menu.inner ul { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; height: 100%; } 
 #footer .speed-big-menu.inner li { position: relative; width: calc(100% / 3); height: 100%; } 
 #footer .speed-big-menu.inner li:nth-of-type(1) { background: url(../imgs/common/footer/1x/f-resv-bg-100.jpg); } 
 #footer .speed-big-menu.inner li:nth-of-type(2) { background: url(../imgs/common/footer/1x/f-point-bg-100.jpg); } 
 #footer .speed-big-menu.inner li:nth-of-type(3) { background: url(../imgs/common/footer/1x/f-dlvry-bg-100.jpg); } 
 
-#footer .speed-big-menu.inner li::after { content: ''; position: absolute; width: 200px; height: 100%; top: 0; right: 0; -webkit-transition: transform 0.4s;-moz-transition: transform 0.4s;-o-transition: transform 0.4s;transition: transform 0.4s; } 
+#footer .speed-big-menu.inner li::after { content: ''; position: absolute; width: 200px; height: 100%; top: 0; right: 0; -webkit-transition: transform 0.4s; -moz-transition: transform 0.4s; -o-transition: transform 0.4s; transition: transform 0.4s; } 
 
 #footer .speed-big-menu.inner li:nth-of-type(1)::after { background: url(../imgs/common/footer/1x/f-resv-icon.svg); } 
 #footer .speed-big-menu.inner li:nth-of-type(2)::after { background: url(../imgs/common/footer/1x/f-point-icon.svg); } 
@@ -91,12 +88,11 @@ transition: top 0.5s; }
 #footer .speed-big-menu.inner li:nth-of-type(3):hover::after,
 #footer .speed-big-menu.inner li:nth-of-type(1) a:focus::after,
 #footer .speed-big-menu.inner li:nth-of-type(2) a:focus::after,
-#footer .speed-big-menu.inner li:nth-of-type(3) a:focus::after{
-transform: translateY(-10px); }  /* TODO: focus안됨 */
+#footer .speed-big-menu.inner li:nth-of-type(3) a:focus::after {transform: translateY(-10px); } /* TODO: focus안됨 */
 
-#footer .speed-big-menu.inner li .txt { position: absolute; left: 35px;top: 80px; color: #5b0808; } 
+#footer .speed-big-menu.inner li .txt { position: absolute; left: 35px; top: 80px; color: #5b0808; } 
 
-#footer .speed-big-menu.inner li .arrow{ position: relative; display: block; width:30px; height:2px; background: #5b0808; top: 80%; left: 40px; } 
+#footer .speed-big-menu.inner li .arrow { position: relative; display: block; width:30px; height:2px; background: #5b0808; top: 80%; left: 40px; } 
 #footer .speed-big-menu.inner li:hover .arrow, #footer .speed-big-menu.inner li a:focus .arrow { width:60px; -webkit-transition: width 0.8s; -moz-transition: width 0.8s; -o-transition: width 0.8s; transition: width 0.8s; } 
 
 #footer .speed-big-menu.inner li .arrow::after { content: ''; position: absolute; width: 16px; height: 8px; bottom: 0; right:-5px; background: url(../imgs/common/footer/1x/f-arrow\ 8-16.svg); } 
@@ -109,7 +105,7 @@ transform: translateY(-10px); }  /* TODO: focus안됨 */
 .footer-wrap ul.footer-menu { position: absolute; right: 0; } 
 .footer-menu li { float: left; } 
 .footer-menu li a:hover, .footer-menu li a:focus { opacity: 0.7; } 
-.btns a, .text-box a { display: inline-block; width: 88px;height: 28px; line-height: 26px; border: 1px solid #b1ada6;text-align: center; } 
+.btns a, .text-box a { display: inline-block; width: 88px; height: 28px; line-height: 26px; border: 1px solid #b1ada6; text-align: center; } 
 .text-box a { position: absolute; width: 120px; top: -1px; } 
 
 .text-box em { font-weight: 700; font-size: 15px; } 
