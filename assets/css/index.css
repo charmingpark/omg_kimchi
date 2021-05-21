@@ -67,9 +67,9 @@
 #cont2 .tabpanel ul li a p span:nth-of-type(2) { color: #000; } 
 #cont2 .tabpanel ul li a p span>em { font-size: 18px; color: inherit; } 
 
-#cont2 #tabpanel2.tabpanel ul li a div { background-image: url(../imgs/main/cont2/pa1-80.jpg); } 
+#cont2 #tabpanel4.tabpanel ul li a div { background-image: url(../imgs/main/cont2/pa1-80.jpg); } 
 #cont2 #tabpanel3.tabpanel ul li a div { background-image: url(../imgs/main/cont2/mu1-80.jpg); } 
-#cont2 #tabpanel4.tabpanel ul li a div { background-image: url(../imgs/main/cont2/baechu1-80.jpg); } 
+#cont2 #tabpanel2.tabpanel ul li a div { background-image: url(../imgs/main/cont2/baechu1-80.jpg); } 
 #cont2 #tabpanel5.tabpanel ul li a div { background-image: url(../imgs/main/cont2/sauce_1-80.jpg); } 
 #cont2 #tabpanel6.tabpanel ul li a div { background-image: url(../imgs/main/cont2/mu1-80.jpg); } 
  
